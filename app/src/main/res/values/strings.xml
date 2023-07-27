@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GpaCalc</string>
+    <string name="GradeLevel">9,10,11,12</string>
+    <string name="CourseName">name of course</string>
+    <string name="Credits">credits earned (E.x 2.0 , 3.0)</string>
+    <string name="CourseGrade">course grade (E.x 97 , 65 ,88)</string>
+</resources>

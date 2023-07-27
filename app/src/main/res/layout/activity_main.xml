@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/grade_Level"
+        android:layout_width="259dp"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:hint="@string/GradeLevel"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/courseName"
+        app:layout_constraintEnd_toEndOf="@+id/courseName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/courseName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.68" />
+
+    <EditText
+        android:id="@+id/courseName"
+        android:layout_width="261dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:hint="@string/CourseName"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/creditsEarned"
+        app:layout_constraintEnd_toEndOf="@+id/creditsEarned"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/creditsEarned"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.847" />
+
+    <EditText
+        android:id="@+id/creditsEarned"
+        android:layout_width="262dp"
+        android:layout_height="51dp"
+        android:ems="10"
+        android:hint="@string/Credits"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/courseGrade"
+        app:layout_constraintEnd_toEndOf="@+id/courseGrade"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/courseGrade"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.885" />
+
+    <EditText
+        android:id="@+id/courseGrade"
+        android:layout_width="261dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:hint="@string/CourseGrade"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/apCheck"
+        app:layout_constraintEnd_toEndOf="@+id/apCheck"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/apCheck"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.922" />
+
+    <CheckBox
+        android:id="@+id/apCheck"
+        android:layout_width="66dp"
+        android:layout_height="48dp"
+        android:text="Ap ?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.315"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/letterGradeView_id"
+        android:layout_width="175dp"
+        android:layout_height="31dp"
+        android:text="Letter Grade:"
+        app:layout_constraintBottom_toTopOf="@+id/gpaPointsView_id"
+        app:layout_constraintEnd_toEndOf="@+id/gpaPointsView_id"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/gpaPointsView_id"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.965" />
+
+    <TextView
+        android:id="@+id/gpaPointsView_id"
+        android:layout_width="178dp"
+        android:layout_height="29dp"
+        android:layout_marginBottom="20dp"
+        android:text="Gpa Points:"
+        app:layout_constraintBottom_toTopOf="@+id/qPointsView_id"
+        app:layout_constraintEnd_toEndOf="@+id/qPointsView_id"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/qPointsView_id" />
+
+    <TextView
+        android:id="@+id/qPointsView_id"
+        android:layout_width="174dp"
+        android:layout_height="30dp"
+        android:text="Quality Points: "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.865" />
+
+    <Button
+        android:id="@+id/addCourse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calc Course"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.617" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
